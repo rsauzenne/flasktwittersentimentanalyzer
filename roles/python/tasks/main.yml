@@ -1,0 +1,9 @@
+---
+
+- name: Install common python packages
+  apt:
+    state: latest
+    name:
+        - python-dev
+        - python-pip
+        - python-pycurl

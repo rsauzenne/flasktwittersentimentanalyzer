@@ -1,0 +1,13 @@
+
+---
+
+- name: Configuration for Python Development
+  hosts: all
+  become: yes
+  vars:
+    user_name: "vagrant"
+    group_name: "www-data"
+
+  roles:
+    - common
+    - python
